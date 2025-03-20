@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import Link from 'next/link';
-import Image from 'next/image';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import Link from "next/link";
+import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 type FormData = {
   name: string;
@@ -237,7 +237,7 @@ export default function ContactPage() {
             <h2 className="text-3xl font-bold mb-10 text-center text-gray-800">我们的位置</h2>
             <div className="rounded-lg overflow-hidden shadow-md h-96 relative">
               <Image 
-                src="https://images.pexels.com/photos/2740483/pexels-photo-2740483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="https://images.pexels.com/photos/2071531/pexels-photo-2071531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="北京鸟巢体育馆地图"
                 fill
                 className="object-cover"
