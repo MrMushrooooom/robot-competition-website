@@ -319,7 +319,7 @@ export default function TicketsPage() {
                   </button>
                   
                   <p className="text-xs text-center text-muted-foreground mt-4">
-                    点击"立即购票"，表示您已阅读并同意<Link href="#" className="text-primary hover:underline">《购票协议》</Link>
+                    点击&ldquo;立即购票&rdquo;，表示您已阅读并同意<Link href="#" className="text-primary hover:underline">《购票协议》</Link>
                   </p>
                 </div>
               </div>

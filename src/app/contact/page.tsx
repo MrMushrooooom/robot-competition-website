@@ -268,17 +268,17 @@ export default function ContactPage() {
             <div className="max-w-3xl mx-auto space-y-6">
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-3">如何报名参加比赛？</h3>
-                <p className="text-gray-600">您可以通过官网"<Link href="/registration" className="text-primary hover:underline">在线报名</Link>"页面完成报名流程，按照步骤填写信息并提交即可。</p>
+                <p className="text-gray-600">您可以通过官网&ldquo;<Link href="/registration" className="text-primary hover:underline">在线报名</Link>&rdquo;页面完成报名流程，按照步骤填写信息并提交即可。</p>
               </div>
               
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-3">如何购买观赛门票？</h3>
-                <p className="text-gray-600">您可以通过官网"<Link href="/tickets" className="text-primary hover:underline">门票购买</Link>"页面选择不同类型的门票并在线支付购买。</p>
+                <p className="text-gray-600">您可以通过官网&ldquo;<Link href="/tickets" className="text-primary hover:underline">门票购买</Link>&rdquo;页面选择不同类型的门票并在线支付购买。</p>
               </div>
               
               <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-3">参赛要求是什么？</h3>
-                <p className="text-gray-600">参赛选手需要具备相关专业背景或机器人开发经验，详细要求请查看"<Link href="/about" className="text-primary hover:underline">赛事介绍</Link>"页面中的参赛要求部分。</p>
+                <p className="text-gray-600">参赛选手需要具备相关专业背景或机器人开发经验，详细要求请查看&ldquo;<Link href="/about" className="text-primary hover:underline">赛事介绍</Link>&rdquo;页面中的参赛要求部分。</p>
               </div>
               
               <div className="bg-gray-50 rounded-lg p-6">
