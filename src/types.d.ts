@@ -1,3 +1,3 @@
 declare module 'react-hook-form' {
-  export function useForm(): any;
+  export function useForm<T = any>(): any;
 } 
