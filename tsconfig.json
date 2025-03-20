@@ -13,6 +13,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "noResolve": false,
     "plugins": [
       {
         "name": "next"
@@ -21,8 +22,13 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "typeRoots": ["./node_modules/@types", "./node_modules"]
+    "typeRoots": ["./node_modules/@types", "./node_modules", "./src/types"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/types.d.ts"],
+  "typeAcquisition": {
+    "enable": true,
+    "disableFilenameBasedTypeAcquisition": true,
+    "exclude": ["@emnapi"]
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/types.d.ts", "src/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
