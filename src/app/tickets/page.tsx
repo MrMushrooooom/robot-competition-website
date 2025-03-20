@@ -191,11 +191,11 @@ export default function TicketsPage() {
                     onClick={() => setSelectedTier(ticket.id)}
                     className={`w-full py-2 px-4 rounded-full text-sm font-medium ${
                       selectedTier === ticket.id
-                        ? 'bg-primary text-white'
-                        : 'bg-primary/10 text-primary hover:bg-primary/20'
+                        ? "bg-primary text-white"
+                        : "bg-primary/10 text-primary hover:bg-primary/20"
                     } transition-colors`}
                   >
-                    {selectedTier === ticket.id ? '已选择' : '选择此票种'}
+                    {selectedTier === ticket.id ? "已选择" : "选择此票种"}
                   </button>
                 </div>
               </div>

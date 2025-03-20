@@ -23,7 +23,7 @@ export default function ContactPage() {
     setIsSubmitting(true);
     // 模拟API调用
     setTimeout(() => {
-      console.log('表单提交数据:', data);
+      console.log("表单提交数据:", data);
       setIsSubmitting(false);
       setSubmitSuccess(true);
       reset();
@@ -160,9 +160,9 @@ export default function ContactPage() {
                       <input
                         id="name"
                         type="text"
-                        className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 ${errors.name ? 'border-red-500' : 'border-gray-300'}`}
+                        className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 ${errors.name ? "border-red-500" : "border-gray-300"}`}
                         placeholder="请输入您的姓名"
-                        {...register('name', { required: '请输入您的姓名' })}
+                        {...register("name", { required: "请输入您的姓名" })}
                       />
                       {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
                     </div>
@@ -172,13 +172,13 @@ export default function ContactPage() {
                       <input
                         id="email"
                         type="email"
-                        className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
+                        className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 ${errors.email ? "border-red-500" : "border-gray-300"}`}
                         placeholder="请输入您的电子邮件"
-                        {...register('email', { 
-                          required: '请输入您的电子邮件', 
+                        {...register("email", { 
+                          required: "请输入您的电子邮件", 
                           pattern: { 
                             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, 
-                            message: '请输入有效的电子邮件地址'
+                            message: "请输入有效的电子邮件地址"
                           }
                         })}
                       />
@@ -191,9 +191,9 @@ export default function ContactPage() {
                     <input
                       id="subject"
                       type="text"
-                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 ${errors.subject ? 'border-red-500' : 'border-gray-300'}`}
+                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 ${errors.subject ? "border-red-500" : "border-gray-300"}`}
                       placeholder="消息主题"
-                      {...register('subject', { required: '请输入消息主题' })}
+                      {...register("subject", { required: "请输入消息主题" })}
                     />
                     {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject.message}</p>}
                   </div>
@@ -203,9 +203,9 @@ export default function ContactPage() {
                     <textarea
                       id="message"
                       rows={5}
-                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 ${errors.message ? 'border-red-500' : 'border-gray-300'}`}
+                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 ${errors.message ? "border-red-500" : "border-gray-300"}`}
                       placeholder="请详细描述您的问题或建议..."
-                      {...register('message', { required: '请输入消息内容' })}
+                      {...register("message", { required: "请输入消息内容" })}
                     ></textarea>
                     {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
                   </div>
@@ -223,7 +223,7 @@ export default function ContactPage() {
                         </svg>
                         发送中...
                       </>
-                    ) : '发送消息'}
+                    ) : "发送消息"}
                   </button>
                 </form>
               </div>
